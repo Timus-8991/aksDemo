@@ -12,7 +12,7 @@ pool:
 variables:
   buildConfiguration: 'Release'
   dockerId: aksDemoRegistry89
-  imageName: aksdemoimage:v3
+  imageName: aksdemoimage:v4
   password: cyDOQ140VjEewLo2er7nWMaYs=fdlHwB
 
 steps:
