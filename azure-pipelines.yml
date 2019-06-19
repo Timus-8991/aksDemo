@@ -26,7 +26,7 @@ steps:
   inputs:
     command: publish
     publishWebProjects: false
-    projects: 'acidemo.csproj'
+    projects: 'aksdemo.csproj'
     arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: true
 
