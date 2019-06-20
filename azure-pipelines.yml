@@ -6,8 +6,9 @@
 trigger:
 - master
 
+
 pool:
-  vmImage: 'windows-2019'
+  vmImage: 'ubuntu-16.04'
 
 variables:
   buildConfiguration: 'Release'
@@ -33,7 +34,7 @@ steps:
 #- task: versioncounter@1
 #  inputs:
 #    VersionVariable: 'versionnumber'
-##    DevOpsPat: '7s624dlgtvqjrmbd4gs5lxtzev5jgh3jzlubjiae3ghaxdo45buq'
+#    DevOpsPat: '7s624dlgtvqjrmbd4gs5lxtzev5jgh3jzlubjiae3ghaxdo45buq'
 
 - script: |
     docker build -t $(imageName) .
