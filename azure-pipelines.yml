@@ -37,7 +37,6 @@ steps:
 #    DevOpsPat: '7s624dlgtvqjrmbd4gs5lxtzev5jgh3jzlubjiae3ghaxdo45buq'
 
 - script: |
-    & $Env:ProgramFiles\Docker\Docker\DockerCli.exe -SwitchDaemon .
     docker build -t $(imageName) .
     docker login -u $(dockerId) -p $(password) $(dockerId).azurecr.io
     docker tag $(imageName) $(dockerId).azurecr.io/$(imageName)
