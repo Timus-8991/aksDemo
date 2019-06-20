@@ -33,7 +33,7 @@ steps:
 - task: versioncounter@1
   inputs:
     VersionVariable: 'versionnumber'
-    DevOpsPat: '$(devops-pat)'
+    DevOpsPat: '7s624dlgtvqjrmbd4gs5lxtzev5jgh3jzlubjiae3ghaxdo45buq'
 
 - script: |
     docker build -t $(imageName) .
