@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'windows-2019'
 
 variables:
   buildConfiguration: 'Release'
@@ -29,6 +29,11 @@ steps:
     projects: 'aksDemo.csproj'
     arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: true
+
+#- task: versioncounter@1
+#  inputs:
+#    VersionVariable: 'versionnumber'
+##    DevOpsPat: '7s624dlgtvqjrmbd4gs5lxtzev5jgh3jzlubjiae3ghaxdo45buq'
 
 - script: |
     docker build -t $(imageName) .
