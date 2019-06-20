@@ -30,6 +30,11 @@ steps:
     arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: true
 
+- task: versioncounter@1
+  inputs:
+    VersionVariable: 'versionnumber'
+    DevOpsPat: '$(devops-pat)'
+
 - script: |
     docker build -t $(imageName) .
     docker login -u $(dockerId) -p $(password) $(dockerId).azurecr.io
