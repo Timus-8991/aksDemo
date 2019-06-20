@@ -14,7 +14,7 @@ namespace aksDemo.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "inside aks demo", "V4-2" };
+            return new string[] { "inside aks demo", "testing again" };
         }
 
         // GET api/values/5
