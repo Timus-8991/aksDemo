@@ -1,0 +1,1 @@
+{"jobID":"80d9f705-963d-6d91-0681-6736a38801bd","spec":{"type":"policy","cause":{"Message":"test","User":"Sumit Saini \u003csainisumit935@yahoo.com\u003e"},"spec":{"default:deployment/aksdemo":{"add":{"automated":"true","automated_msg":"test","automated_user":"Sumit Saini \u003csainisumit935@yahoo.com\u003e"},"remove":null}}},"result":null}
