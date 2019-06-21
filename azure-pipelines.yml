@@ -13,8 +13,10 @@ pool:
 variables:
   buildConfiguration: 'Release'
   dockerId: aksDemoRegistry89
-  imageName: aksdemoimage:$(Build.BuildNumber)
+  imageName: aksdemoimage:v1
   password: cyDOQ140VjEewLo2er7nWMaYs=fdlHwB
+
+#$(Build.BuildNumber)
 
 steps:
 - script: dotnet restore
