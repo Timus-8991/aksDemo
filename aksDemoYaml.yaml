@@ -19,7 +19,7 @@ spec:
       terminationGracePeriodSeconds: 30
       containers:
       - name: aksdemodontainer
-        image: aksdemoregistry89.azurecr.io/aksdemoimage:v1
+        image: aksdemoregistry89.azurecr.io/aksdemoimage:20190620.25
         imagePullPolicy: "Always"
         ports:
         - containerPort: 80
