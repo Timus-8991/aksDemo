@@ -4,9 +4,9 @@ kind: Deployment
 metadata:
   name: aksdemo
   annotations:
-    flux.weave.works/tag.aksdemodontainer: glob:develop-v*
+#    flux.weave.works/tag.aksdemodontainer: glob:develop-v*
     flux.weave.works/automated_user: Sumit Saini <sainisumit935@yahoo.com>
-#    flux.weave.works/automated: 'true'
+    flux.weave.works/automated: 'true'
     flux.weave.works/automated_msg: test
 spec:
   replicas: 4
@@ -24,7 +24,7 @@ spec:
         "beta.kubernetes.io/os": linux
       containers:
       - name: aksdemodontainer
-        image: aksdemoregistry89.azurecr.io/aksdemoimage:20190625.29
+        image: aksdemoregistry89.azurecr.io/aksdemoimage:20190625.33
         imagePullPolicy: "Always"
         ports:
         - containerPort: 80
