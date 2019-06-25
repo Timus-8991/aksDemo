@@ -21,10 +21,9 @@ spec:
     spec:
       nodeSelector:
         "beta.kubernetes.io/os": linux
-      terminationGracePeriodSeconds: 30
       containers:
       - name: aksdemodontainer
-        image: aksdemoregistry89.azurecr.io/aksdemoimage:20190621.8
+        image: aksdemoregistry89.azurecr.io/aksdemoimage:20190621.9
         imagePullPolicy: "Always"
         ports:
         - containerPort: 80
