@@ -23,7 +23,7 @@ spec:
         "beta.kubernetes.io/os": linux
       containers:
       - name: aksdemodontainer
-        image: aksdemoregistry89.azurecr.io/aksdemoimage:20190625.13
+        image: aksdemoregistry89.azurecr.io/aksdemoimage:20190625.14
         imagePullPolicy: "Always"
         ports:
         - containerPort: 80
