@@ -4,6 +4,7 @@ kind: Deployment
 metadata:
   name: aksdemo
   annotations:
+    flux.weave.works/tag.aksdemodontainer: glob:develop-v*
     flux.weave.works/automated_user: Sumit Saini <sainisumit935@yahoo.com>
 #    flux.weave.works/automated: 'true'
     flux.weave.works/automated_msg: test
