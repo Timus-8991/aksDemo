@@ -3,6 +3,9 @@
 # Add steps that run tests, create a NuGet package, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
+
+name: 1.1.$(patchno)$(Rev:.r)
+
 trigger:
 - master
 
@@ -11,6 +14,7 @@ pool:
   vmImage: 'ubuntu-16.04'
 
 variables:
+  patchno: 0
   buildConfiguration: 'Release'
   dockerId: aksDemoRegistry89
   imageName: aksdemoimage:$(Build.BuildNumber)
