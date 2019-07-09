@@ -16,9 +16,9 @@ pool:
 variables:
   patchno: 0
   buildConfiguration: 'Release'
-  dockerId: aksDemoRegistry58
+  dockerId: aksRegistry57
   imageName: aksdemoimage:$(Build.BuildNumber)
-  password: g0P1kqoQOBZ7JRIPs7u0=W42b7WXbCf7
+  password: /PS1rRCN2PVxspQTaPt53KwClitbjB1Q
 
 #$(Build.BuildNumber)
 
